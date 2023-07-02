@@ -1,0 +1,13 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: envpod
+spec:
+ containers:
+  - name: encon
+    image: ubuntu
+    command: ["/bin/bash","-c", "while true; do echo hello world; sleep 5; done"]
+    env:
+      - name: database
+        value: testpass
+                     

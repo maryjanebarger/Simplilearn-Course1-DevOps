@@ -1,0 +1,87 @@
+Docker commands:
+
+1) docker images
+
+2) in your laptop browser -> open https://hub.docker.com/ -> explore -> you will a lot of images
+
+open https://hub.docker.com/_/postgres   and copy  docker pull postgres
+
+and paste in your terminal 
+
+docker pull postgres
+
+3) docker images 
+(you will see postgres image) 
+
+4) docker pull postgres:13
+
+5) docker images
+
+(you will see two images now ...with different versions)
+
+6) docker image rm postgres:latest
+
+7) docker image rm postgres:13   (removing image with tag 13) 
+
+8) docker images  (both the images would be removed)
+
+9)docker run -it --name c01 ubuntu /bin/bash
+
+# THIS COMMAND WILL CREATE A CONTAINER WITH NAME C01 AMD WITH UBUNTU AS A BASE IMAGE AND YOU WILL ALSO ENTER INSIDE THE CONTAINER 
+(-IT : INTERACTIVE TERMINAL)
+(/BIN/BASH : BASH TERMINAL)
+
+10) exit    #you will come out of the container...and this command will stop the container
+
+
+11) docker images  (you will see ubuntu image)
+
+12) docker ps -a   (it will show the list of the containers) 
+
+13) docker run -it --name c02 ubuntu /bin/bash 
+
+14) exit
+
+
+
+##### How we can enter in the existing container ##########
+
+
+15) docker start c01     #this command will start the container c01
+
+16) docker attach c01    #to enter inside the c01 container
+
+
+17) apt update -y
+
+18) apt install apache2 -y
+
+19) touch file1 file2 
+
+20) ls
+
+21) exit
+
+##############
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
